@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
 <head>
 	<meta charset="utf-8">
 
-	<title>Timepikr</title>
+	<title>Timepikr - Javascript input type time pollyfill</title>
 	<link rel="stylesheet" href="timepicker.css">
-	<link rel="stylesheet" href="/citylook/assets/css/datepicker.css">
 </head>
 <body>
 	<div class="container">
 		<h1>Time</h1>
 		<input type="time" id="time" name="time">
-	</div>
-	<div class="container">
-		<h1>Date</h1>
-		<input type="date" name="date" id="date">
+		<p>
+			<a href="http://emiliocobos.net/time-pollyfill">Read more</a>
+		</p>
 	</div>
 	<script src="timepicker.js"></script>
-	<script src="/citylook/assets/js/datepicker.min.js"></script>
 	<script>
 		var timePicker = new TimePikr({element: document.getElementById('time')});
-		var dateField = document.getElementById('date');
-		// dateField.type = "text";
-		// var datePicker = new Pikaday({field: dateField})
 	</script>
 </body>
 </html>
