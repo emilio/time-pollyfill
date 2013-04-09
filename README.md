@@ -41,3 +41,7 @@ Modernizr.load({
 ## Author
 
 [Emilio Cobos Álvarez](http://emiliocobos.net)
+
+## Todo
+
+* Add keyboard support
