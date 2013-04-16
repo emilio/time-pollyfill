@@ -8,15 +8,21 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Time</h1>
-		<input type="time" id="time" name="time">
+		<h1>Native <code>&lt;input type="time"&gt;</code></h1>
+		<p>
+			<input type="time" id="native">
+		</p>
+		<h1>Polyfilled</h1>
+		<p>
+			<input type="text" id="polyfill_me">
+		</p>
 		<p>
 			<a href="http://emiliocobos.net/polyfill-input-type-time/">Read more</a>
 		</p>
 	</div>
 	<script src="timepicker.js"></script>
 	<script>
-		var timePicker = new TimePikr({element: document.getElementById('time')});
+		var timePicker = new TimePikr({element: document.getElementById("polyfill_me")});
 	</script>
 </body>
 </html>
